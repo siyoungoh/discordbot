@@ -2,6 +2,8 @@ import requests
 import time
 
 api_key = 'mma api token'
+# API docs :  https://developer.sportradar.com/docs/read/combat_sports/MMA_v2#mma-api-overview
+
 
 # User input - 찾기 원하는 정보
 search_keyword = 'UFC 273'
