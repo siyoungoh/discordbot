@@ -1,5 +1,14 @@
 # 정보 discordbot 만들기
-- 특정 command 입력하면 hello 출력하기
+- MMA 선수 프로필 정보 보여주기
+  - 선수 이름은 대소문자 구분없이 검색 가능
+
+## 사용법
+- `/mma 선수영어이름(성 또는 이름) UFC###(경기명)`
+- `config.json` 파일에 정보 채우기
+  - API_KEY 에는 아래 [sportradar - MMA API](https://developer.sportradar.com/docs/read/combat_sports/MMA_v2#mma-api-overview) 에서 발급받은 API  KEY
+  - DISCORD_TOKEN 에는 만든 BOT의 TOKEN
+
+## 참고
 - MMA API docs :  https://developer.sportradar.com/docs/read/combat_sports/MMA_v2#mma-api-overview
 
 ### Step by Step - MMA API
@@ -21,5 +30,6 @@
 #### Step 5. 리팩토링
 - API 에서 검색이 안되어 오류나는 경우 "정보가 존재하지 않습니다" 메시지 출력하기
 - API 조회 코드를 다른 함수로 분리하기
+- 선수이름을 대소문자 상관없이 검색할 수 있게 하기
 
 
